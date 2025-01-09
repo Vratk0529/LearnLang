@@ -1,4 +1,4 @@
-import random, os, math
+import os
 from termcolor import colored
 
 slova = []
@@ -47,9 +47,27 @@ def readFileToDB(filename):
         line = line.replace("\n", "")
 
         split = line.split(";")
-        slova.append([line.startswith("/"), split[0].replace("/", ""), split[1]])
+        slova.append(
+            [line.startswith("/"), split[0].replace("/", ""), split[1]])
 
         line = f.readline()
+
+
+def colorWord(word):
+    word = str(word).strip()
+
+    if word.startswith("der"):
+        word.replace("der", colored("der", "blue"), 1)
+    elif word.startswith("die"):
+        word.replace("die", colored("die", "red"), 1)
+    elif word.startswith("das"):
+        word.replace("das", colored("das", "green"), 1)
+
+    return word
+
+
+def colorWordColored(word, color):
+    return colorWord(colored(word, color))
 
 
 def askWord(wordAsked, wordSK):
@@ -61,7 +79,7 @@ def askWord(wordAsked, wordSK):
     elif answer == "save":
         saveCorrectWords(filename + ".cor")
         return 0
-    
+
     if answer == wordAsked:
         print(colored("Good", "green"))
         return 1
@@ -73,11 +91,12 @@ def askWord(wordAsked, wordSK):
         for i in range(len(answerSplit)):
             if answerSplit[i] == wordSplit[i]:
                 points += 1 / len(answerSplit)
-        
+
         if points == 0:
             points = -1
 
-        print(colored("Wrong", "red"), ", correct: ", colored(wordAsked, "red"), sep="")
+        print(colored("Wrong", "red"), ", correct: ",
+              colorWordColored(wordAsked, "red"), sep="")
         return points
 
 
@@ -103,7 +122,7 @@ def printAllWords():
             "SKIP: ",
             spaceAlign(wordpair[0], 7),
             "DE: ",
-            spaceAlign(wordpair[1], 35),
+            spaceAlign(colorWord(wordpair[1]), 35),
             "SK: ",
             spaceAlign(wordpair[2], 35),
             "COR: ",
@@ -115,17 +134,21 @@ def printAllWords():
         if y % 5 == 0:
             print()
 
+
 def yesOrNoInput(question):
     inp = input(question).lower().strip()
     if inp.count("y") > 0:
         return True
     return False
 
+
 def clear():
     os.system("clear")
 
+
 def enterToContinue():
     input("Press Enter to continue")
+
 
 filename = getFileName()
 
@@ -147,7 +170,7 @@ numCorrect = 0
 
 while True:
     for i in range(0, len(slova)):
-        if correct[i] >= 5 or slova[i][0]:
+        if correct[i] >= 3 or slova[i][0]:
             numCorrect += 1
             continue
 
@@ -155,8 +178,13 @@ while True:
 
         if correct[i] < -2:
             correct[i] = -2
+
     if numCorrect == len(slova):
         print(colored("Good job, you know everything", "green"))
         enterToContinue()
         close()
+
     numCorrect = 0
+
+    enterToContinue()
+    clear()

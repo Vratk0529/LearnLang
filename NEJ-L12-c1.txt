@@ -23,9 +23,9 @@ die Autobahn;diaľnica
 sich beeilen;ponáhľať sa
 sich entspannen;uvoľniť sa / odpočinúť si
 das Ergebnis;výsledok
-sich erholen;odpočinúť si
+/sich erholen;odpočinúť si
 sich freuen;tešiť sa / mať radosť
 sich konzentrieren;sústrediť sa
-die Taststätte;diaľničné odpočívadlo
+die Raststätte;diaľničné odpočívadlo
 sammeln;zbierať
 der Stau;dopravná zápcha

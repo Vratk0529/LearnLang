@@ -1,0 +1,38 @@
+die Abfahrt;odchod
+anderhalb;jeden a pol
+der Angestellte;zamestnanec
+das Bargeld;hotovosť
+die Fahrkarte;cestovný lístok
+die Fahrt;cesta, jazda
+der Hbf;hlavná železničná stanica
+reichen;stačiť
+die Rückfahrkarte;spiatočný cestovný lístok
+der Schülerausweis;žiacky preukaz
+stornieren;stornovať, zrušiť
+tun;robiť, konať
+um|steigen;prestúpiť
+ZOB;centrálna autobusová stanica
+die Einzelkarte;jednotlivý lístok / vstupenka
+das Geschirr;riad
+gültig;platný
+die Kurzstrecke;krátky úsek cesty
+der Nahbereich;blízke okolie
+spülen;umývať
+die Tageskarte;celodenný lístok
+verdienen;zarábať, zarobiť
+zahlbar;splatný
+die Adresse;adresa
+die Atmosphäre;atmosféra
+aus|füllen;vyplniť
+bar;v hotovosti
+besetzen;obsadiť
+das Check-out;check-out
+der Fall;pád
+jemand;niekto, ktosi
+das Passwort;heslo
+der Personalausweis;občiansky preukaz
+die Rezeption;recepcia
+der Schlüssel;kľúč
+schreien;kričať
+die Unterschrift;podpis
+wild;divý

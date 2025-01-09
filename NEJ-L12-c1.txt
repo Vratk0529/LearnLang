@@ -1,0 +1,31 @@
+die Reise;cesta / cestovanie
+der Verkehr;doprava / premávka
+bestehen;skladať sa
+das Ding;vec
+der Einwohner;obyvateľ
+die Marke;značka, známka
+durchfliessen;pretekať (čím)
+fliessen;tiecť
+das Gebirge;pohorie, hory
+die Insel;ostrov
+das Meer;more
+münden;ústiť, vlievať sa
+die Nordsee;Severné more
+die Ostsee;Baltské more
+die See;more
+berechnen;spočítať
+lösen;(vy)riešiť
+die Richtung;smer
+selbst;sám, sama, osobne
+sich an|ziehen;oblecť sa / si
+sich aus|kennen;vyznať sa
+die Autobahn;diaľnica
+sich beeilen;ponáhľať sa
+sich entspannen;uvoľniť sa / odpočinúť si
+das Ergebnis;výsledok
+sich erholen;odpočinúť si
+sich freuen;tešiť sa / mať radosť
+sich konzentrieren;sústrediť sa
+die Taststätte;diaľničné odpočívadlo
+sammeln;zbierať
+der Stau;dopravná zápcha

@@ -34,7 +34,7 @@ def getFileName():
 
     i = 0
     for file in selFiles:
-        print(i, ": ", file)
+        print("%02d: %s" % (i , file))
         i += 1
     return selFiles[int(input("Zadajte cislo suboru: "))]
 
@@ -55,14 +55,16 @@ def readFileToDB(filename):
 
 def colorWord(word):
     word = str(word).strip()
-
-    if word.startswith("der"):
-        word.replace("der", colored("der", "blue"), 1)
-    elif word.startswith("die"):
-        word.replace("die", colored("die", "red"), 1)
-    elif word.startswith("das"):
-        word.replace("das", colored("das", "green"), 1)
-
+    
+    splitword = word.split(" ")
+    if len(splitword) == 2:
+        if splitword[0] == "der":
+            splitword[0] = colored("der", "blue")
+        elif splitword[0] == "die":
+            splitword[0] = colored("die", "red")
+        elif splitword[0] == "das":
+            splitword[0] = colored("das", "green")
+        word = splitword[0] + " " + splitword[1]
     return word
 
 
@@ -73,7 +75,7 @@ def colorWordColored(word, color):
 def askWord(wordAsked, wordSK):
     global filename
 
-    answer = input(str(wordSK + ": "))
+    answer = input(str(wordSK + ": ")).strip()
     if answer == "exit":
         close()
     elif answer == "save":
@@ -81,7 +83,7 @@ def askWord(wordAsked, wordSK):
         return 0
 
     if answer == wordAsked:
-        print(colored("Good", "green"))
+        print(colored("Good", "green"), ", ", colorWord(wordAsked), sep="")
         return 1
     else:
         answerSplit = answer.split(" ")
@@ -113,6 +115,13 @@ def spaceAlign(text, numofSpaces):
     return strtext
 
 
+def spaceAlignColored(text, orgText, numofSpaces):
+    strtext = str(orgText)
+    numofSpaces -= len(strtext)
+    if numofSpaces > 0:
+        return text + (" " * numofSpaces)
+    return text
+
 def printAllWords():
     global slova, correct
     y = 0
@@ -122,7 +131,7 @@ def printAllWords():
             "SKIP: ",
             spaceAlign(wordpair[0], 7),
             "DE: ",
-            spaceAlign(colorWord(wordpair[1]), 35),
+            spaceAlignColored(colorWord(wordpair[1]), wordpair[1], 35),
             "SK: ",
             spaceAlign(wordpair[2], 35),
             "COR: ",
@@ -149,6 +158,7 @@ def clear():
 def enterToContinue():
     input("Press Enter to continue")
 
+clear()
 
 filename = getFileName()
 
@@ -170,7 +180,7 @@ numCorrect = 0
 
 while True:
     for i in range(0, len(slova)):
-        if correct[i] >= 3 or slova[i][0]:
+        if correct[i] >= 4 or slova[i][0]:
             numCorrect += 1
             continue
 

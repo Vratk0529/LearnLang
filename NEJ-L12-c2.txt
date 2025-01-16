@@ -1,0 +1,54 @@
+die Strecke;cesta
+sich treffen;stretnúť sa
+der Unfall;nehoda
+viereinhalb;štyri a pol
+sich vor|bereiten;pripraviť sa (na)
+sich vor|stellen;predstaviť sa/si
+sich ärgern;hnevať sa, zlostiť sa
+sich bewegen;hýbať sa, pohybovať sa
+sich erkälten;prechladnúť
+die Hälfte;polovica
+hoch|fahren;vyjsť hore
+der Lkw;nákladné auto
+die Rettungsgasse;záchranná ulička
+der Rettungswagen;záchranné vozidlo
+die Rundwanderung;okružná túra
+schwer;ťažký
+die Seilbahn;lanová dráha
+sperren;uzavrieť, zatvoriť
+die Umleitung;obchádzka
+die Verkehrsmeldung;doprávne hlásenie
+sich verlaufen;zablúdiť
+sich wundern;diviť sa, čudovať
+die Zahnradbahn;ozubená dráha
+die Ausfahrt;výjazd (z diaľnice)
+das Dreieck;trojuholník
+der Kreisverkehr;kruhový objazd
+das Kreuz;kríž
+stockend;viaznuci
+die Tunnelsperre;uzatvorenie tunela
+anders;inak
+der Anschlag;útok, atentát
+beliebt;obľúbený
+der Betonblock;betónový blok
+das Denkmal;pamätník
+erfüllen;splniť
+die Erinnerung;pamiatka, spomienka
+der Fernsehturm;televízna veža
+das Graffiri;graffiti
+grausam;krutý, ukrutný
+handeln;konať, počíňať si
+herrlich;nádherný, prekrásny
+kosten;stáť
+die Kuppel;kupola
+lebending;živý, čulý
+/das Mahnmal;pamätník, pomník
+die Mauer;stena
+der Rest;zvyšok, zostatok
+die Teilung;rozdelenie
+der Tiergarten;ZOO
+traurig;smutný
+wichtig;dôležitý
+die Wirklichkeit;skutočnosť
+hoch;vysoký
+lang;dlhý

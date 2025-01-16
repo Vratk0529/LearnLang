@@ -34,7 +34,7 @@ def getFileName():
 
     i = 0
     for file in selFiles:
-        print("%02d: %s" % (i , file))
+        print("%02d: %s" % (i, file))
         i += 1
     return selFiles[int(input("Zadajte cislo suboru: "))]
 
@@ -55,7 +55,7 @@ def readFileToDB(filename):
 
 def colorWord(word):
     word = str(word).strip()
-    
+
     splitword = word.split(" ")
     if len(splitword) == 2:
         if splitword[0] == "der":
@@ -91,8 +91,11 @@ def askWord(wordAsked, wordSK):
         points = 0
 
         for i in range(len(answerSplit)):
+            if i >= len(wordSplit):
+                points = 0
+                break
             if answerSplit[i] == wordSplit[i]:
-                points += 1 / len(answerSplit)
+                points -= 1 / len(answerSplit)
 
         if points == 0:
             points = -1
@@ -121,6 +124,7 @@ def spaceAlignColored(text, orgText, numofSpaces):
     if numofSpaces > 0:
         return text + (" " * numofSpaces)
     return text
+
 
 def printAllWords():
     global slova, correct
@@ -158,6 +162,7 @@ def clear():
 def enterToContinue():
     input("Press Enter to continue")
 
+
 clear()
 
 filename = getFileName()
@@ -178,16 +183,44 @@ clear()
 
 numCorrect = 0
 
+correctNumMax = 4
+correctNumIdk = 1
+
+batchSizeIncrease = 5
+
 while True:
+    partOfUnknownWords = []
+    unknownWords = []
+
     for i in range(0, len(slova)):
-        if correct[i] >= 4 or slova[i][0]:
+        if len(partOfUnknownWords) > 5 + batchSizeIncrease * (correctNumIdk - 1):
+            break
+
+        if correct[i] >= correctNumIdk or slova[i][0]:
             numCorrect += 1
             continue
+        elif not slova[i][0]:
+            partOfUnknownWords.append([slova[i], i])
 
-        correct[i] += askWordDB(i)
+    if len(partOfUnknownWords) < 3:
+        if correctNumIdk <= correctNumMax:
+            correctNumIdk += 1
+            continue
 
-        if correct[i] < -2:
-            correct[i] = -2
+    for i in range(0, len(partOfUnknownWords)):
+        orgIndex = partOfUnknownWords[i][1]
+        correct[orgIndex] += askWord(partOfUnknownWords[i][0][1],
+                                     partOfUnknownWords[i][0][2])
+
+        if correct[orgIndex] < -1:
+            correct[orgIndex] = -3
+            while correct[orgIndex] < -1:
+                correct[orgIndex] += askWord(partOfUnknownWords[i][0][1],
+                                             partOfUnknownWords[i][0][2])
+            unknownWords.append(partOfUnknownWords[i][0])
+
+    for unknownWord in unknownWords:
+        askWord(unknownWord[1], unknownWord[2])
 
     if numCorrect == len(slova):
         print(colored("Good job, you know everything", "green"))

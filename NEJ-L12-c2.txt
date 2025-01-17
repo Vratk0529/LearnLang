@@ -41,7 +41,7 @@ handeln;konať, počíňať si
 herrlich;nádherný, prekrásny
 kosten;stáť
 die Kuppel;kupola
-lebending;živý, čulý
+lebendig;živý, čulý
 /das Mahnmal;pamätník, pomník
 die Mauer;stena
 der Rest;zvyšok, zostatok

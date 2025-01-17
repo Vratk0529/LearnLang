@@ -190,14 +190,15 @@ while True:
     unknownWords = []
 
     for i in range(0, len(slova)):
-        if correct[i] > 2 or slova[i][0]:
+        if correct[i] >= 2 or slova[i][0]:
+            numCorrect += 1
             continue
 
         correct[i] += askWord(slova[i][1],
                               slova[i][2])
 
         if correct[i] < -1:
-            correct[i] = -3
+            correct[i] = -2
             while correct[i] < -1:
                 correct[i] += askWord(slova[i][1],
                                       slova[i][2])

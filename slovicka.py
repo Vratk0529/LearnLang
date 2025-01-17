@@ -184,40 +184,24 @@ clear()
 numCorrect = 0
 
 correctNumMax = 4
-correctNumIdk = 1
 
-batchSizeIncrease = 5
 
 while True:
-    partOfUnknownWords = []
     unknownWords = []
 
     for i in range(0, len(slova)):
-        if len(partOfUnknownWords) > 5 + batchSizeIncrease * (correctNumIdk - 1):
-            break
-
-        if correct[i] >= correctNumIdk or slova[i][0]:
-            numCorrect += 1
-            continue
-        elif not slova[i][0]:
-            partOfUnknownWords.append([slova[i], i])
-
-    if len(partOfUnknownWords) < 3:
-        if correctNumIdk <= correctNumMax:
-            correctNumIdk += 1
+        if correct[i] > 2 or slova[i][0]:
             continue
 
-    for i in range(0, len(partOfUnknownWords)):
-        orgIndex = partOfUnknownWords[i][1]
-        correct[orgIndex] += askWord(partOfUnknownWords[i][0][1],
-                                     partOfUnknownWords[i][0][2])
+        correct[i] += askWord(slova[i][1],
+                              slova[i][2])
 
-        if correct[orgIndex] < -1:
-            correct[orgIndex] = -3
-            while correct[orgIndex] < -1:
-                correct[orgIndex] += askWord(partOfUnknownWords[i][0][1],
-                                             partOfUnknownWords[i][0][2])
-            unknownWords.append(partOfUnknownWords[i][0])
+        if correct[i] < -1:
+            correct[i] = -3
+            while correct[i] < -1:
+                correct[i] += askWord(slova[i][1],
+                                      slova[i][2])
+            unknownWords.append(slova[i])
 
     for unknownWord in unknownWords:
         askWord(unknownWord[1], unknownWord[2])

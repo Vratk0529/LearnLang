@@ -35,7 +35,7 @@ das Denkmal;pamätník
 erfüllen;splniť
 die Erinnerung;pamiatka, spomienka
 der Fernsehturm;televízna veža
-das Graffiri;graffiti
+das Graffiti;graffiti
 grausam;krutý, ukrutný
 handeln;konať, počíňať si
 herrlich;nádherný, prekrásny

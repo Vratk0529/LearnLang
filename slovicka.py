@@ -197,12 +197,12 @@ while True:
         correct[i] += askWord(slova[i][1],
                               slova[i][2])
 
-        if correct[i] < -1:
-            correct[i] = -2
-            while correct[i] < -1:
-                correct[i] += askWord(slova[i][1],
-                                      slova[i][2])
-            unknownWords.append(slova[i])
+        # if correct[i] < -1:
+        #     correct[i] = -2
+        #     while correct[i] < -1:
+        #         correct[i] += askWord(slova[i][1],
+        #                               slova[i][2])
+        #     unknownWords.append(slova[i])
 
     for unknownWord in unknownWords:
         askWord(unknownWord[1], unknownWord[2])

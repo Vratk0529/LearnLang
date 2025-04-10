@@ -1,0 +1,46 @@
+das Leben;život
+der Stil;štýl
+das Wetter;počasie
+die Accessoires;doplnky
+aktuell;aktuálny
+allerdings;avšak, však
+der Berich;správa
+bewölkt;zamračený, zatiahnutý
+blitzen;blýskať sa
+donnern;hrmieť
+frieren;mrznúť
+das Gewitter;búrka
+das Grad;stupeň (jednotka teploty)
+der Handschuh;rukavica
+heiss;horúci
+heiter;jasný, slnečný
+die Höchsttemperatur;najvyššia teplota
+neblig;hmlistý
+regnen;pršať
+der Schauer;prehánka
+scheinen;svietiť
+schneien;snežiť
+sogar;ba aj, dokonca
+die Sonne; slnko
+sonnig;slnečný
+steigen;stúpať
+stürmisch;búrlivý, prudký, rozbúrený
+teilweise bedeckt;čiastočne zatiahnnuté
+die Temperatur;teplota
+die Warnung;výstraha, varovanie
+wechselhaft;premenlivý
+die Wettervorhersage;predpoveď počasia
+windig;veterný
+wolkig;oblačný, zamračené
+aus|leihen;požičať
+der Bikini;bikiny
+ein|packen;baliť
+elegant;elegantný
+der Flipflop;šľapka
+der Gummistiefel;gumová čižma
+das Hemd;košeľa
+die Hose;nohavice
+die Jacke;bunda
+die Jeans;džínsy
+das Kleid;šaty
+der Pullover;pulóver

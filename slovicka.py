@@ -212,7 +212,7 @@ while True:
         enterToContinue()
         close()
 
-    print("You know %i%% percent of the words" %
+    print("You know %i%% of the words" %
           (int(numCorrect/len(slova)*100)))
 
     numCorrect = 0

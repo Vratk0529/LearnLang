@@ -1,0 +1,48 @@
+der Regenschirm;dáždnik
+der Schal;šál
+die Shorts;šortky
+die Socke;ponožka
+die Wetterapp;aplikácia na počasie
+der Anzug;oblek
+auf keinen Fall;v žiadnom prípade
+der Ausverkauf;výpredaj
+die Badehose;plavky
+der BH;podprsenka
+die Bluse;blúzka
+die Boxershorts;boxerky
+der Flyer;leták
+der Halbschuh;poltopánka
+das Höschen;nohavičky
+der Jogginghose;tepláky
+das Kleidungsstück;kus odevu
+kühl;chladný
+die Leggins;legíny
+der Mantel;kabát
+die Mütze;čiapka
+der Pumps;logička
+der Rock;sukňa
+die Sandale;sandál
+der Schlafanzug;pyžamo
+die Skinny-Jeans;úzke džínsy
+der Sportschuh;športová topánka
+der Stiefel;čižma
+der Strickpullover;pletený pulóver
+die Strumpfhose;pančuchové nohavice
+das Sweatshirt;mikina
+das Top;top
+die Tunika;tunika
+das Outfit;outfit
+an|probieren;vyskúšať si
+eng;úzky
+geschehen;prihodiť sa
+die Grösse;veľkosť
+passen;pristať
+der Schnürschuh;šnúrovacia topánka
+die Umkleidekabine;skúšobná kabínka
+der Alltag;všedný deň
+auf|passen;dávať pozor
+die Augenbraue;obočie
+der Ausschnitt;výstrih
+betonen;zdôrazniť
+der Blazer;športové sako
+das Detail;detail

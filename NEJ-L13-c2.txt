@@ -19,7 +19,7 @@ kühl;chladný
 die Leggins;legíny
 der Mantel;kabát
 die Mütze;čiapka
-der Pumps;logička
+der Pumps;lodička
 der Rock;sukňa
 die Sandale;sandál
 der Schlafanzug;pyžamo

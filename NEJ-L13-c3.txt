@@ -1,49 +1,49 @@
-dezent;decentný
+/dezent;decentný
 erfahren;dozvedieť sa
-extravagant;extravagantný
-fein;jemný
-die Figur;postava
-flach;rovný, nízky
+/extravagant;extravagantný
+/fein;jemný
+/die Figur;postava
+/flach;rovný, nízky
 das Gefühl;cit, zmysel
-gepunktet;bodkovaný
+/gepunktet;bodkovaný
 gestreift;pruhovaný
 gewöhnlich;obyčalný, bežný
 grossartig;úžasný, super
-der Gürtel;pás, opasok
+/der Gürtel;pás, opasok
 der Hut;klobúk
 die Kappe;čiapka, šiltovka
 die Kette;retiazka
 kombinieren;kombinovať
-der Kragen;golier
+/der Kragen;golier
 die Krawatte;kravata
-die Lederhose;kožené nohavice
-das Make-up;make-up
-die Modepolizei;módna polícia
+/die Lederhose;kožené nohavice
+/das Make-up;make-up
+/die Modepolizei;módna polícia
 nennen;pomenovať, nazývať
 der Ohrring;náušnica
-das Piercing;piercing
+/das Piercing;piercing
 der Ring;prsteň
-das Sakko;sako
-die Sohle;podošva
-die Sonnenbrille;slnečné okuliare
-stehen;sedieť, pristať
-stylen;upraviť, skrašliť
-der Trekkingschuh;turistická topánka
-der Typ;typ
+/das Sakko;sako
+/die Sohle;podošva
+/die Sonnenbrille;slnečné okuliare
+/stehen;sedieť, pristať
+/stylen;upraviť, skrašliť
+/der Trekkingschuh;turistická topánka
+/der Typ;typ
 die Wahl;voľba, výber
 weit;široký
 zerrissen;roztrhaný
-zusammen|passen;hodiť sa k sebe
+/zusammen|passen;hodiť sa k sebe
 altmodisch;staromódny
-die Armbanduhr;náramkové hodiny
-einverstanden;uzrozumený
-die Empfehlung;odporúčanie, rada
+/die Armbanduhr;náramkové hodiny
+/einverstanden;uzrozumený
+/die Empfehlung;odporúčanie, rada
 die Handtasche;kabelka
-leger;ležérny, nenútený
+/leger;ležérny, nenútený
 der Rucksack;batoh
-schick;elegantný, šik
-seriös;seriózny
+/schick;elegantný, šik
+/seriös;seriózny
 das Tuch;šatka
-die Markenkleidung;značkové oblečenie
-das Sprichwort;príslovie, porekadlo
-stilgerecht;štýlový
+/die Markenkleidung;značkové oblečenie
+/das Sprichwort;príslovie, porekadlo
+/stilgerecht;štýlový

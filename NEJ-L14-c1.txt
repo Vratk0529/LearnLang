@@ -3,7 +3,7 @@ die Gesundheit;zdravie
 der Rücken;chrbát
 Gesundheit!;Na zdravie!
 der Schmerz;bolesť
-Ich habe Halsschmerzen.;Boli ma v krku.
+/Ich habe Halsschmerzen.;Boli ma v krku.
 die Krankheit;choroba, ochorenie
 die Schulter;plece
 menschlicher Körper;ľudské telo
@@ -32,10 +32,10 @@ das Faultier;leňoch, povaľač
 oval;oválny
 der Finger;prst
 rot;ryšavý, hrdzavý (vlasy)
-(sich) fühlen;cítiť (sa)
+sich fühlen;cítiť sa
 gamen;hrať na počítači
 rund;okrúhly, buclatý
-das Gesäß;zadok
+das Gesäss;zadok
 die Sommersprosse;peha
 das Haar;vlas, chlp
 die Stirn;čelo
@@ -49,6 +49,6 @@ der Körper;telo
 die Zunge;jazyk
 der Mund;ústa
 die Nase;nos
-Meine Nase läuft.;Mám nádchu. Tečie mi z nosa.
+/Meine Nase läuft.;Mám nádchu. Tečie mi z nosa.
 die Allergie;alergia
 die Angina;angína

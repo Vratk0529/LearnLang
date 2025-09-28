@@ -1,0 +1,54 @@
+das Ohr;ucho
+die Gesundheit;zdravie
+der Rücken;chrbát
+Gesundheit!;Na zdravie!
+der Schmerz;bolesť
+Ich habe Halsschmerzen.;Boli ma v krku.
+die Krankheit;choroba, ochorenie
+die Schulter;plece
+menschlicher Körper;ľudské telo
+weh|tun;bolieť
+der Zeh;palec (na nohe)
+der Arzt;lekár
+beim Arzt;u lekára
+der Bart;brada, fúzy
+blond;blond
+dicht;hustý
+der Arm;rameno, ruka
+dünn;chudý, vychudnutý
+das Auge;oko
+das Gesicht;tvár
+der Bauch;brucho
+glatt;hladký, rovný (vlasy)
+das Bein;noha
+die Glatze;lysina, plešina
+brennen;páliť
+das Kinn;brada (časť tváre)
+die Brust;hrudník, prsia
+die Lippe;pera
+der Ellbogen;lakeť
+die Narbe;jazva
+das Faultier;leňoch, povaľač
+oval;oválny
+der Finger;prst
+rot;ryšavý, hrdzavý (vlasy)
+(sich) fühlen;cítiť (sa)
+gamen;hrať na počítači
+rund;okrúhly, buclatý
+das Gesäß;zadok
+die Sommersprosse;peha
+das Haar;vlas, chlp
+die Stirn;čelo
+der Hals;krk, hrdlo
+die Wange;lícе
+das Knie;koleno
+die Wimper;mihalnica, riasa
+der Kopf;hlava
+der Zahn;zub
+der Körper;telo
+die Zunge;jazyk
+der Mund;ústa
+die Nase;nos
+Meine Nase läuft.;Mám nádchu. Tečie mi z nosa.
+die Allergie;alergia
+die Angina;angína

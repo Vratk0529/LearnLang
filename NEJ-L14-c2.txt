@@ -10,7 +10,7 @@ das Fieber;horúčka
 froh;rád, vďačný
 die Grippe;chrípka
 der Husten;kašeľ
-Irgendwie;nejako, dajako
+irgendwie;nejako, dajako
 kaputt;zničený, vyčerpaný
 krank;chorý, nemocný
 niesen;kýchať
@@ -36,8 +36,8 @@ der Freak;nadšenec, fanúšik
 der Gamer;počítačový hráč
 die Gänsehaut;husacia koža, zimomriavky
 das Gehirn;mozog
-der Glückwunsch, Glückwünsche;blahoželanie
-Gute Besserung!;Skoré uzdravenie!
+der Glückwunsch;blahoželanie
+/Gute Besserung!;Skoré uzdravenie!
 der Jugendliche;mladistvý, mladistvá
 die Krankenkasse;zdravotná poisťovňa
 lösen;uvoľniť, poľaviť
@@ -49,7 +49,7 @@ teilen;(po)deliť sa, zdieľať
 die Zigarette;cigareta
 zweieinhalb;dva a pol
 anstrengend;namáhavý
-aufhören;skončiť, prestať (s čím)
+auf|hören;skončiť, prestať (s čím)
 dafür;pre (to)
 dagegen;proti (tomu)
 die Diätn;diéta

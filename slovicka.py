@@ -63,7 +63,7 @@ def colorWord(word):
     if not COLOR:
         return word
     splitword = word.split(" ")
-    if len(splitword) >= 2:
+    if len(splitword) == 2:
         if splitword[0] == "der":
             splitword[0] = colored("der", "blue")
         elif splitword[0] == "die":

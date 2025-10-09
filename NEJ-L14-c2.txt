@@ -1,0 +1,56 @@
+atmen;dýchať
+bluten;krvácať
+sich brechen;zlomiť si
+/Ich habe mir das Bein gebrochen.;Zlomil/a som si nohu.
+denn;pretože, lebo
+der Durchfall;hnačka
+sich erbrechen;zvracať, vyvracať sa
+erkältet;prechladnutý, nachladnutý
+das Fieber;horúčka
+froh;rád, vďačný
+die Grippe;chrípka
+der Husten;kašeľ
+Irgendwie;nejako, dajako
+kaputt;zničený, vyčerpaný
+krank;chorý, nemocný
+niesen;kýchať
+der Schnupfen;nádcha
+schwach;slabý
+schwindelig;nevoľno, zle
+sondern;ale
+übel;zle, nepríjemne
+sich verbrennen;spáliť sa, popáliť sa
+/Ich habe mich verbrannt.;Spálil/a som sa.
+sich verletzen;zraniť (sa), poraniť (sa)
+/Ich habe mich verletzt.;Zranil/a som sa.
+verstauchen;vyvrtnúť si, vytknúť si
+/Ich habe mir den Fuss verstaucht.;Vyvrtol/a som si nohu (chodidlo)
+die Verstopfung;zápcha
+wohl;dobre
+abhängig sein;byť závislý (od)
+der Alkohol;alkohol
+die Droge;droga
+durchschnittlich;priemerný, priemerne
+folgend;nasledujúci
+der Freak;nadšenec, fanúšik
+der Gamer;počítačový hráč
+die Gänsehaut;husacia koža, zimomriavky
+das Gehirn;mozog
+der Glückwunsch, Glückwünsche;blahoželanie
+Gute Besserung!;Skoré uzdravenie!
+der Jugendliche;mladistvý, mladistvá
+die Krankenkasse;zdravotná poisťovňa
+lösen;uvoľniť, poľaviť
+die Social Media;Sociálne médiá
+soziales Netzwerk;Sociálna sieť
+soziale Netzwerke;Sociálne siete
+die Sucht;závislosť
+teilen;(po)deliť sa, zdieľať
+die Zigarette;cigareta
+zweieinhalb;dva a pol
+anstrengend;namáhavý
+aufhören;skončiť, prestať (s čím)
+dafür;pre (to)
+dagegen;proti (tomu)
+die Diätn;diéta
+faulenzen;leňošiť

@@ -1,5 +1,9 @@
 import os
-from termcolor import colored
+try:
+    from termcolor import colored
+    COLOR = True
+except:
+    COLOR = False
 
 slova = []
 correct = []
@@ -56,8 +60,10 @@ def readFileToDB(filename):
 def colorWord(word):
     word = str(word).strip()
 
+    if not COLOR:
+        return word
     splitword = word.split(" ")
-    if len(splitword) == 2:
+    if len(splitword) >= 2:
         if splitword[0] == "der":
             splitword[0] = colored("der", "blue")
         elif splitword[0] == "die":
@@ -69,6 +75,8 @@ def colorWord(word):
 
 
 def colorWordColored(word, color):
+    if not COLOR:
+        return word
     return colorWord(colored(word, color))
 
 
@@ -83,7 +91,10 @@ def askWord(wordAsked, wordSK):
         return 0
 
     if answer == wordAsked:
-        print(colored("Good", "green"), ", ", colorWord(wordAsked), sep="")
+        if COLOR:
+            print(colored("Good", "green"), ", ", colorWord(wordAsked), sep="")
+        else:
+            print("Good", ", ", colorWord(wordAsked), sep="")
         return 1
     else:
         answerSplit = answer.split(" ")
@@ -99,9 +110,11 @@ def askWord(wordAsked, wordSK):
 
         if points == 0:
             points = -1
-
-        print(colored("Wrong", "red"), ", correct: ",
-              colorWordColored(wordAsked, "red"), sep="")
+        if COLOR:
+            print(colored("Wrong", "red"), ", correct: ",
+                colorWordColored(wordAsked, "red"), sep="")
+        else:
+            print("Wrong", ", correct: ", wordAsked, sep="")
         return points
 
 
@@ -156,7 +169,10 @@ def yesOrNoInput(question):
 
 
 def clear():
-    os.system("clear")
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
 
 
 def enterToContinue():
@@ -164,6 +180,9 @@ def enterToContinue():
 
 
 clear()
+
+if not COLOR:
+    print("You don't have termcolor installed, text colors won't work\n")
 
 filename = getFileName()
 
@@ -208,7 +227,10 @@ while True:
         askWord(unknownWord[1], unknownWord[2])
 
     if numCorrect == len(slova):
-        print(colored("Good job, you know everything", "green"))
+        if COLOR:
+            print(colored("Good job, you know everything", "green"))
+        else:
+            print("Good job, you know everything")
         enterToContinue()
         close()
 

@@ -1,6 +1,6 @@
 import os
 try:
-    from termcolor import colored
+    from colorama import Fore, Style, init
     COLOR = True
 except:
     COLOR = False
@@ -57,33 +57,51 @@ def readFileToDB(filename):
         line = f.readline()
 
 
-def colorWord(word):
+def colorWord(word, restOfColor: str = None):
     word = str(word).strip()
 
     if not COLOR:
         return word
     splitword = word.split(" ")
+
+    if restOfColor == "red":
+        restOfColor = Fore.RED
+    elif restOfColor == "green":
+        restOfColor = Fore.GREEN
+    elif restOfColor == "blue":
+        restOfColor = Fore.BLUE
+
     if len(splitword) == 2:
         if splitword[0] == "der":
-            splitword[0] = colored("der", "blue")
+            splitword[0] = Fore.BLUE + "der" + Fore.RESET
         elif splitword[0] == "die":
-            splitword[0] = colored("die", "red")
+            splitword[0] = Fore.RED + "die" + Fore.RESET
         elif splitword[0] == "das":
-            splitword[0] = colored("das", "green")
-        word = splitword[0] + " " + splitword[1]
+            splitword[0] = Fore.GREEN + "das" + Fore.RESET
+        else:
+            if restOfColor is not None:
+                return restOfColor + word
+            else:
+                return word
+        if restOfColor is not None:
+            word = splitword[0] + " " + restOfColor + splitword[1] + Fore.RESET
+        else:
+            word = splitword[0] + " " + splitword[1]
+    else:
+        if restOfColor is not None:
+            word = restOfColor + word
+
     return word
 
 
-def colorWordColored(word, color):
-    if not COLOR:
-        return word
-    return colorWord(colored(word, color))
-
-
-def askWord(wordAsked, wordSK):
+def askWord(wordAsked, wordSK: str):
     global filename
 
-    answer = input(str(wordSK + ": ")).strip()
+    if COLOR:
+        answer = input(Fore.CYAN + wordSK + Fore.RESET + ": ").strip()
+    else:
+        answer = input(wordSK + ": ").strip()
+
     if answer == "exit":
         close()
     elif answer == "save":
@@ -92,9 +110,9 @@ def askWord(wordAsked, wordSK):
 
     if answer == wordAsked:
         if COLOR:
-            print(colored("Good", "green"), ", ", colorWord(wordAsked), sep="")
+            print(Fore.GREEN + "Good, " + colorWord(wordAsked, "green"))
         else:
-            print("Good", ", ", colorWord(wordAsked), sep="")
+            print("Good, " + colorWord(wordAsked))
         return 1
     else:
         answerSplit = answer.split(" ")
@@ -111,10 +129,10 @@ def askWord(wordAsked, wordSK):
         if points == 0:
             points = -1
         if COLOR:
-            print(colored("Wrong", "red"), ", correct: ",
-                colorWordColored(wordAsked, "red"), sep="")
+            print(Fore.RED + "Wrong", ", correct: ", Fore.CYAN + wordSK, " = ",
+                  colorWord(wordAsked, "red"), sep="")
         else:
-            print("Wrong", ", correct: ", wordAsked, sep="")
+            print("Wrong", ", correct: ", wordSK, " = ", wordAsked, sep="")
         return points
 
 
@@ -182,7 +200,9 @@ def enterToContinue():
 clear()
 
 if not COLOR:
-    print("You don't have termcolor installed, text colors won't work\n")
+    print("You don't have \"colorama\" installed, text colors won't work\n")
+else:
+    init(autoreset=True)
 
 filename = getFileName()
 
@@ -204,6 +224,9 @@ numCorrect = 0
 
 correctNumMax = 4
 
+numberOfCorrectWords = 0
+numberOfWords = 0
+correctInRow = 0
 
 while True:
     unknownWords = []
@@ -213,29 +236,35 @@ while True:
             numCorrect += 1
             continue
 
-        correct[i] += askWord(slova[i][1],
-                              slova[i][2])
-
-        # if correct[i] < -1:
-        #     correct[i] = -2
-        #     while correct[i] < -1:
-        #         correct[i] += askWord(slova[i][1],
-        #                               slova[i][2])
-        #     unknownWords.append(slova[i])
+        numberOfWords += 1
+        print(f"{i + 1}/{len(slova) + 1} ", end="")
+        correctNow = askWord(slova[i][1],
+                             slova[i][2])
+        correct[i] += correctNow
+        if correctNow == 1:
+            numberOfCorrectWords += 1
+            correctInRow += 1
+        else:
+            correctInRow = 0
+        if correctInRow > 2:
+            if COLOR:
+                print(Fore.GREEN + "Correct in a row: " + str(correctInRow))
+            else:
+                print("Correct in a row: " + str(correctInRow))
 
     for unknownWord in unknownWords:
         askWord(unknownWord[1], unknownWord[2])
 
     if numCorrect == len(slova):
         if COLOR:
-            print(colored("Good job, you know everything", "green"))
+            print(Fore.GREEN + "Good job, you know everything")
         else:
             print("Good job, you know everything")
         enterToContinue()
         close()
 
     print("You know %i%% of the words" %
-          (int(numCorrect/len(slova)*100)))
+          (int(numberOfCorrectWords/numberOfWords*100)))
 
     numCorrect = 0
 

@@ -23,7 +23,7 @@ sich verbrennen;spáliť sa, popáliť sa
 /Ich habe mich verbrannt.;Spálil/a som sa.
 sich verletzen;zraniť (sa), poraniť (sa)
 /Ich habe mich verletzt.;Zranil/a som sa.
-verstauchen;vyvrtnúť si, vytknúť si
+sich verstauchen;vyvrtnúť si, vytknúť si
 /Ich habe mir den Fuss verstaucht.;Vyvrtol/a som si nohu (chodidlo)
 die Verstopfung;zápcha
 wohl;dobre

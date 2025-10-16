@@ -1,0 +1,51 @@
+das Fett;tuk
+fettarm;nízkotučný
+genug;dosť, dostatočne
+hassen;nenávidieť
+die Hülsenfrüchte;strukoviny
+die Leistung;výkon
+die Meinung;názor, mienka
+regelmässig;pravidelný, pravidelne
+schaden;škodiť, ubližovať (komu, čomu)
+schädigen;poškodiť (koho, čo)
+verbrauchen;spotrebovať, vyčerpať
+die zwischenmenschlichen Beziehungen;medziľudské vzťahy
+an|führen;uviesť, vymenovať
+ausserdem;okrem toho
+die Beschwerde;ťažkosti, zdravotné problémy
+darum;preto, z toho dôvodu
+deshalb;preto, z toho dôvodu
+fehlen;chýbať
+/Was fehlt Ihnen denn?;Čože Vám chýba? / Čo Vám je?
+der Hustensaft;sirup proti kašľu
+/Hustensaft nehmen;brať sirup proti kašľu
+die Impfung;očkovanie
+der Nasenspray;sprej do nosa
+/Nasenspray anwenden;používať sprej do nosa
+der Notarzt;lekár pohotovostnej služby
+der Oberkörper;horná časť tela, trup
+das Röntgenbild;röntgenová snímka
+die Stimme;hlas
+die Tablette;tableta
+/Tabletten nehmen;brať tabletky
+trotzdem;napriek tomu
+untersuchen;prehliadnuť, vyšetriť (pacienta)
+verschreiben;predpísať, naordinovať
+die Versicherung;poistenie
+vorbeikommen;(za)staviť sa, krátko navštíviť (hovor.)
+die Behandlung;liečba, ošetrenie
+die Bindehautentzündung;zápal očných spojiviek
+der Gips;sadra, gyps
+die Magen-Darm-Grippe;črevná chrípka
+der Patient;pacient
+das Pflaster;náplasť
+die Salbe;masť
+/Salbe auftragen;naniesť masť
+die Spritze;injekcia, injekčná striekačka
+der Sturz;pád, zrútenie
+der Thermometer;teplomer
+die Tropfen;kvapky
+der Umschlag;obklad, zábal
+der Verband;obväz
+die Lutschtablette;cmúľacia tableta
+schwitzen;potiť sa

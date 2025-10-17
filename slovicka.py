@@ -1,4 +1,6 @@
 import os
+import random
+
 try:
     from colorama import Fore, Style, init
     COLOR = True
@@ -218,55 +220,144 @@ if yesOrNoInput("Print table of all words? "):
     printAllWords()
     enterToContinue()
 
-clear()
 
-numCorrect = 0
-
-correctNumMax = 4
-
-numberOfCorrectWords = 0
-numberOfWords = 0
-correctInRow = 0
-
-while True:
-    unknownWords = []
-
-    for i in range(0, len(slova)):
-        if correct[i] >= 2 or slova[i][0]:
-            numCorrect += 1
-            continue
-
-        numberOfWords += 1
-        print(f"{i + 1}/{len(slova) + 1} ", end="")
-        correctNow = askWord(slova[i][1],
-                             slova[i][2])
-        correct[i] += correctNow
-        if correctNow == 1:
-            numberOfCorrectWords += 1
-            correctInRow += 1
-        else:
-            correctInRow = 0
-        if correctInRow > 2:
-            if COLOR:
-                print(Fore.GREEN + "Correct in a row: " + str(correctInRow))
-            else:
-                print("Correct in a row: " + str(correctInRow))
-
-    for unknownWord in unknownWords:
-        askWord(unknownWord[1], unknownWord[2])
-
-    if numCorrect == len(slova):
-        if COLOR:
-            print(Fore.GREEN + "Good job, you know everything")
-        else:
-            print("Good job, you know everything")
-        enterToContinue()
-        close()
-
-    print("You know %i%% of the words" %
-          (int(numberOfCorrectWords/numberOfWords*100)))
-
-    numCorrect = 0
-
-    enterToContinue()
+def main():
     clear()
+
+    print("Select mode:")
+    print("1 - Normal practice mode")
+    print("2 - Learning mode (5 rotating words)")
+    mode = input("Choice: ")
+
+    if mode == "2":
+        learning_mode()
+    else:
+        normal_mode()
+
+
+def normal_mode():
+    numCorrect = 0
+    correctNumMax = 4
+
+    numberOfCorrectWords = 0
+    numberOfWords = 0
+    correctInRow = 0
+
+    while True:
+        unknownWords = []
+
+        for i in range(0, len(slova)):
+            if correct[i] >= 2 or slova[i][0]:
+                numCorrect += 1
+                continue
+
+            numberOfWords += 1
+            print(f"{i + 1}/{len(slova) + 1} ", end="")
+            correctNow = askWord(slova[i][1], slova[i][2])
+            correct[i] += correctNow
+            if correctNow == 1:
+                numberOfCorrectWords += 1
+                correctInRow += 1
+            else:
+                correctInRow = 0
+            if correctInRow > 2:
+                if COLOR:
+                    print(Fore.GREEN + "Correct in a row: " + str(correctInRow))
+                else:
+                    print("Correct in a row: " + str(correctInRow))
+
+        for unknownWord in unknownWords:
+            askWord(unknownWord[1], unknownWord[2])
+
+        if numCorrect == len(slova):
+            if COLOR:
+                print(Fore.GREEN + "Good job, you know everything")
+            else:
+                print("Good job, you know everything")
+            enterToContinue()
+            close()
+
+        print("You know %i%% of the words" %
+              (int(numberOfCorrectWords / numberOfWords * 100)))
+
+        numCorrect = 0
+
+        enterToContinue()
+        clear()
+
+
+def learning_mode():
+    """
+    Learning mode: keep 5 active words, ask them repeatedly in random order.
+    When a word reaches correctNumMax (4) it is replaced by the next unlearned word.
+    If we run out of new words we wrap to the beginning.
+    After each full pass over the 5 active words the screen is cleared.
+    """
+    correctNumMax = 4
+    n = len(slova)
+    if n == 0:
+        print("No words available.")
+        return
+
+    learned = [0] * n
+    active_size = 5
+    active_words = [i % n for i in range(active_size)]
+    next_word_pointer = active_size % n
+
+    def find_next_candidate(start):
+        idx = start % n
+        for _ in range(n):
+            if idx not in active_words and learned[idx] < correctNumMax:
+                return idx
+            idx = (idx + 1) % n
+        return None
+
+    while True:
+        # Check if all words are learned
+        if all(c >= correctNumMax for c in learned):
+            if COLOR:
+                print(Fore.GREEN + "Great job! You've learned all the words.")
+            else:
+                print("Great job! You've learned all the words.")
+            enterToContinue()
+            close()
+
+        # Shuffle the order for this round
+        round_order = active_words.copy()
+        random.shuffle(round_order)
+
+        for word_idx in round_order:
+            # if this slot points to a mastered word, try replacing it
+            if learned[word_idx] >= correctNumMax:
+                candidate = find_next_candidate(next_word_pointer)
+                if candidate is not None:
+                    active_words[active_words.index(word_idx)] = candidate
+                    next_word_pointer = (candidate + 1) % n
+                    word_idx = candidate
+                else:
+                    continue  # all learned or no candidate left
+
+            correctNow = askWord(slova[word_idx][1], slova[word_idx][2])
+            if correctNow == 1:
+                learned[word_idx] += 1
+            else:
+                learned[word_idx] = max(0, learned[word_idx] - 0)
+
+            # Replace mastered word immediately
+            if learned[word_idx] >= correctNumMax:
+                candidate = find_next_candidate(next_word_pointer)
+                if candidate is not None:
+                    active_words[active_words.index(word_idx)] = candidate
+                    next_word_pointer = (candidate + 1) % n
+
+        # End of a full pass
+        if COLOR:
+            print(Fore.CYAN + "\nRound complete.")
+        else:
+            print("\nRound complete.")
+
+        enterToContinue()
+        clear()
+
+
+main()

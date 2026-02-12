@@ -1,0 +1,39 @@
+die Sportsachen;športové potreby, pomôcky
+stark;silný
+/der Lebensstil;životný štýl
+die Sportergebnisse;športové výsledky
+das Angeln;rybolov
+/die Athletik;atletika
+/das Autorennen;automobilové preteky
+/der Basketball;basketball
+/der Biathlon;biatlon
+/das Boxen;box
+der Einzelsport;individuálny šport
+/der Eiskunstlauf;krasokorčuľovanie
+das Fechten;šerm
+/der Floorball;florbal
+/das Golf;golf
+/die Gymnastik;gymnastika
+/der Handball;hádzaná
+/der Mannschaftssport;kolektívny šport
+das Reiten;jazda na koni
+das Segeln;plachtenie, jachting
+das Skispringen;skoky na lyžiach
+das Tauchen;potápanie
+/das Tischtennis;stolný tenis
+/der Volleyball;volejbal
+anerkannt;uznávaný, uznaný
+geniessen;užívať si, vychutnávať si
+gesellig;družný, spoločenský
+/die Halle;hala
+halten;súdiť, myslieť si
+kämpfen;bojovať
+/die Kondition;kondícia
+/die Luft;vzduch
+der Muskel;sval
+rennen;bežať, utekať
+schiessen;strieľať
+/die Taktik;taktika
+/das Turnier;turnaj, súťaž
+verlieren;stratiť, prehrať
+der Wettkampf;preteky, zápas

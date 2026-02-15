@@ -48,7 +48,7 @@ def getFileName():
 def readFileToDB(filename):
     global slova
     f = open(filename, "r")
-    line = f.readline()
+    line = f.readline().strip()
     while line != "":
         line = line.replace("\n", "")
 
@@ -56,7 +56,7 @@ def readFileToDB(filename):
         slova.append(
             [line.startswith("/"), split[0].replace("/", ""), split[1]])
 
-        line = f.readline()
+        line = f.readline().strip()
 
 
 def colorWord(word, restOfColor: str = None):
@@ -236,15 +236,13 @@ def main():
 
 
 def normal_mode():
-    numCorrect = 0
     correctNumMax = 4
-
-    numberOfCorrectWords = 0
-    numberOfWords = 0
     correctInRow = 0
 
     while True:
-        unknownWords = []
+        correctWordsNow = 0
+        numberOfWords = 0
+        numCorrect = 0
 
         for i in range(0, len(slova)):
             if slova[i][0]:
@@ -252,14 +250,14 @@ def normal_mode():
             numberOfWords += 1
             if correct[i] >= 2:
                 numCorrect += 1
-                numberOfCorrectWords += 1
+                correctWordsNow += 1
                 continue
 
-            print(f"{i + 1}/{len(slova) + 1} ", end="")
+            print(f"{i + 1}/{len(slova)} ", end="")
             correctNow = askWord(slova[i][1], slova[i][2])
             correct[i] += correctNow
             if correctNow == 1:
-                numberOfCorrectWords += 1
+                correctWordsNow += 1
                 correctInRow += 1
             else:
                 correctInRow = 0
@@ -268,9 +266,6 @@ def normal_mode():
                     print(Fore.GREEN + "Correct in a row: " + str(correctInRow))
                 else:
                     print("Correct in a row: " + str(correctInRow))
-
-        for unknownWord in unknownWords:
-            askWord(unknownWord[1], unknownWord[2])
 
         if numCorrect == numberOfWords:
             if COLOR:
@@ -281,9 +276,7 @@ def normal_mode():
             close()
 
         print("You know %i%% of the words" %
-              (int(numberOfCorrectWords / numberOfWords * 100)))
-
-        numCorrect = 0
+              (int(correctWordsNow / numberOfWords * 100)))
 
         enterToContinue()
         clear()

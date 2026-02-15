@@ -247,11 +247,14 @@ def normal_mode():
         unknownWords = []
 
         for i in range(0, len(slova)):
-            if correct[i] >= 2 or slova[i][0]:
+            if slova[i][0]:
+                continue
+            if correct[i] >= 2:
                 numCorrect += 1
+                numberOfCorrectWords += 1
+                numberOfWords += 1
                 continue
 
-            numberOfWords += 1
             print(f"{i + 1}/{len(slova) + 1} ", end="")
             correctNow = askWord(slova[i][1], slova[i][2])
             correct[i] += correctNow

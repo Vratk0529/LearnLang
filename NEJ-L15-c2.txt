@@ -1,0 +1,33 @@
+der Ball;lopta
+der Elfmeter;pokutový kop, penalta
+das Foul;faul
+foulen;faulovať
+der Gleichstand;vyrovnaný stav
+der Handschuh;rukavica
+die Heimatstadt;rodné mesto
+der Helm;helma, prilba
+die Nationalmannschaft;národné mužstvo, reprezentácia
+das Remis;remíza
+der Schiedsrichter;rozhodca
+das Seil;lano
+die Spielregel;pravidlo hry
+die Strafe;trest, pokuta
+der Stürmer;útočník
+das Tor;brána, bránka, gól
+der Torwart;bránkar
+der Turnschuh;teniska
+überspringen;preskočiť
+/das Unentschieden;remíza
+der Verteidiger;obranca
+als;keď
+die Angst;strach
+die Funktionswäsche;funkčná bielizeň
+die Hoffnung;nádej
+der Neoprenanzug;neoprénový oblek
+die Nerven;nervy
+das Netz;sieť
+der Schläger;raketa, pálka, hokejka
+der Schützer;chránič
+das Spielfeld;ihrisko, hracia plocha
+der Spielschluss;koniec hry
+die Thermowäsche;termobielizeň

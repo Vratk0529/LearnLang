@@ -249,10 +249,10 @@ def normal_mode():
         for i in range(0, len(slova)):
             if slova[i][0]:
                 continue
+            numberOfWords += 1
             if correct[i] >= 2:
                 numCorrect += 1
                 numberOfCorrectWords += 1
-                numberOfWords += 1
                 continue
 
             print(f"{i + 1}/{len(slova) + 1} ", end="")
@@ -272,7 +272,7 @@ def normal_mode():
         for unknownWord in unknownWords:
             askWord(unknownWord[1], unknownWord[2])
 
-        if numCorrect == len(slova):
+        if numCorrect == numberOfWords:
             if COLOR:
                 print(Fore.GREEN + "Good job, you know everything")
             else:

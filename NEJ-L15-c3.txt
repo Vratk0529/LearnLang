@@ -1,0 +1,46 @@
+das Trikot;trikot, tričko
+weinen;plakať
+wenn;keď
+zaubern;čarovať, kúzliť
+die Abfahrt;zjazd (na lyžiach)
+der Anfänger;začiatočník
+die Ausrüstung;výstroj, vybavenie
+die Buchung;rezervácia
+das Ereignis;udalosť
+der Fortgeschrittene;pokročilý
+die Gruppenermässigung;skupinová zľava
+der Rabatt;zľava
+der Set;set, súprava
+der Skistock;lyžiarska palica
+der Verein;spolok, klub
+der Verleih;požičovňa
+der Zuschauer;divák
+die Zuschauerin;diváčka
+der Bach;potok
+fleissig;usilovný, pracovitý
+obwohl;hoci, aj keď, i keď
+die Piste;zjazdovka
+trainieren;trénovať
+ändern;zmeniť, upraviť
+die Belohnung;odmena
+die Bewegung;pohyb
+dar|stellen;predstavovať
+der Diabetes;cukrovka
+die Folge;následok, dôsledok
+der Grund;dôvod
+das Herz;srdce
+der Knochen;kosť
+der Krebs;rakovina
+die Milliarde;miliarda
+mindestens;najmenej, aspoň
+passiv;pasívny
+der Sportplatz;športové ihrisko
+überhaupt;vôbec
+übertrieben;prehnaný
+veröffentlichen;zverejniť, publikovať
+zugleich;zároveň, súčasne
+der Artikel;článok
+sich befinden;nachádzať sa, byť
+eher;skôr
+das Fitnessstudio;fitnescentrum
+das Krafttraining;posilňovanie
